@@ -1,0 +1,148 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+.Top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/torshov.jpg");
+    background-size: cover;
+    
+    /* if i set width, wont auto adjust */
+    width: 720px; 
+    height: 343px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+#title {
+    background-color: #1D3557;
+    color: white;
+    width: 201px;
+    height: 34px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#title-des {
+    margin-top: 0px;
+    background-color: #457B9D;
+    width: 335px;
+    height: 39px;
+    color: white;
+    font-weight: bold;
+}
+
+.Middle {
+    margin-top: 0;
+    color: #1D3557;
+    margin: auto;
+    background-color: #F1FAEE;
+    width: 720px;
+    height: 378px;
+    margin-bottom: 0;
+}
+
+#middle-title {
+    padding: 8px;
+    font-size: 24px;
+}
+
+.images {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+body {
+    color: #1D3557;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+}
+
+.image-div{
+    color: #1D3557;
+}
+
+/*middle h3*/
+#theatre-h3 {
+    width: 183px;
+    height: 32px;
+    margin: auto;
+    padding: 20px;
+}
+
+#park-h3 {
+    width: 162px;
+    height: 35px;
+    margin: auto;
+    padding: 20px;
+}
+
+#sport-h3 {
+    width: 197px;
+    height: 38px;
+    margin: auto;
+    padding: 20px;
+}
+
+.middle-p {
+    font-size: 16px;
+}
+
+/* Bottom */
+.Bottom {
+    padding: 50px;
+    width: 720px;
+    height: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A8DADC;
+    border-radius: 10px;
+    border-bottom: 10px solid black;
+    width: 400px;
+    height: 294px;
+}
+
+#Per {
+    padding: 20px;
+    width: 180px;
+    height: 250px;
+    border-radius: 0;
+}
+#guide-h3 {
+    font-size: 24px;
+}
+
+#guide-des {
+    font-style: italic;
+}
