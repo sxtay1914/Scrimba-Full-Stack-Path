@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" id="input">
+            <button id="btn" onClick="getValue()">Convert</button>
+        </header>
+        <section>
+            <div>
+                <p class="sub">Length (Meter/Feet)</p>
+                <p id="length"></p>
+            </div>
+            <div>
+                <p class="sub">Volume (Liters/Gallons)</p>
+                <p id="volume"></p>
+            </div>            
+            <div>
+                <p class="sub">Mass (Kilograms/Pounds)</p>
+                <p id="mass"></p>
+            </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
