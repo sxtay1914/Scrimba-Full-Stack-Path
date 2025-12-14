@@ -1,0 +1,96 @@
+/* 400px width */
+
+html, body {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bold-w {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+/* logo section */
+header {
+    width: 390px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #C6C6C6;
+}
+
+.logo {
+    width: 150px;
+    height: 75px;
+    margin: 0;
+}
+
+/* post section */
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.post-container {
+    font-size: 12px;
+    width: 400px;
+    display: flex;
+    padding: 7px;
+    justify-content: left;
+    text-align: center;
+}
+
+.post-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.post-container p {
+    margin: 0;
+}
+
+.post-avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.post-img {
+    width: 420px;
+    height: 400px;
+    margin: 0;
+}
+
+/* footer section */
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+footer {
+    padding: 10px;
+}
+
+.icons-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.likes {
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.comment {
+    margin: 6px 0;
+}
