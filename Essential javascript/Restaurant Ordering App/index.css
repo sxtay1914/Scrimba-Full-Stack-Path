@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Smythe", serif;
+} 
+
+.grey {
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.middle-font {
+    font-size: 28px;
+    font-weight: 300;
+}
+/* header */
+header{
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 170px;
+    color: whitesmoke;
+    padding: 1px;
+}
+
+header > h1 {
+    font-size: 39px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+header > h2 {
+    font-size: 22.42px;
+    font-weight: 100;
+    margin-top: 0;
+    margin-left: 40px;
+    padding: 0;
+}
+
+/* Menu section */
+
+/* emoji is text, so cannot affect width */
+main{
+    padding: 50px 30px 0 30px;
+    margin-bottom: 0;
+    /* border: 1px solid black; */
+}
+
+.menu {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 20px;
+    
+}
+
+.menu h1 {
+    margin-bottom: 0px;
+}
+
+.menu-price {
+    margin-top: 0;    
+    margin-bottom: 60px;
+} 
+
+.image {
+    font-size: 70px;
+    margin: 20px;
+}
+
+/* rmb its auto not 100% */
+.add-btn {
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+    font-size: 32px;
+    font-weight: 1;
+}
+
+.menu-des {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+
+/* Footer section */
+footer {
+    /* border: 1px solid black; */
+    padding: 0 30px 0 30px;
+    margin-top: 30px;
+}
+footer h1 {
+    text-align: center;
+}
+
+.payment {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.payment-container {
+    display: flex;
+    justify-content: left;
+    gap: 6px;
+    padding-bottom: 10px;
+}
+
+.payment-price {
+    margin-left: auto;
+}
+
+.payment button {
+    border: 0;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete-btn {
+    width: 100%;
+    margin: 20px 0;
+    height: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Modal */
+.modal{
+    height: 542px;
+    width: 524px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1001;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.modal form {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.modal input {
+    width: 475px;
+    height: 71px;
+    padding: 5px;
+}
+
+.modal h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+/* Final message */
+.final {
+    color: #065F46;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 60px;
+    background-color: #ECFDF5;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+}
