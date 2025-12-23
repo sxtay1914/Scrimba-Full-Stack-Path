@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="hide backdrop" id="backdrop"></div>
+        <section class="hide modal" id="modal">
+            <form>
+                <h1>Enter card details</h1>
+                <input id="name" type="text" placeholder="Enter your name" required>
+                <input id="card-number" type="number" placeholder="Enter card number" required>
+                <input id="card-cvv" type="password" placeholder="Enter CVV" required>
+                <button class="complete-btn" id="pay-btn"> Pay </button>
+            </form>
+        </section>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgers and pizzas in town.</h2>
+        </header>
+        <main>
+            <section class="menu-section" id="menu"></section>
+        </main>
+        <footer class="payment-section hide" id="footer">
+            <!-- <section class="message" id="message"></section> -->
+            <section class="payment" id="payment"></section>
+            <section class="total" id="total"></section>
+        </footer>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
