@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* =================
+    Site Layout 
+   ================= */
+
+body {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas:
+        ".... .... ...." 
+        ".... head ...."
+        ".... main ...."
+        ".... foot ...."
+        ".... .... ....";
+    gap: 1em 0;
+}
+
+.site-header {
+    grid-area: head;
+}
+
+footer {
+    grid-area: foot;
+}
+
+/* =================
+    Main Element Layout 
+   ================= */
+   
+main {
+    grid-area: main;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "tech"
+        "envi"
+        "nasa"
+        "phys"
+        "heal";     
+}
+
+@media(min-width: 500px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "tech tech"
+            "envi nasa"
+            "phys nasa"
+            "heal heal"
+    } 
+}
+   
+@media(min-width: 870px){
+    main {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(9, 1fr) repeat(3, minmax(70px, 1fr));
+        grid-template-areas: 
+            "tech tech tech tech tech tech envi envi envi nasa nasa nasa"
+            "phys phys phys heal heal heal heal heal heal nasa nasa nasa"
+    }
+}
+
+.technology {
+    grid-area: tech;
+}
+    
+.environment {
+    grid-area: envi;
+}
+
+.nasa {
+    grid-area: nasa;
+}
+
+.physics { 
+    grid-area: phys;
+}
+
+.health {
+    grid-area: heal;
+}
+
+/* =================
+    Article Card 
+   ================= */
+   
+a:hover, a:focus {
+    filter: brightness(0.9);
+}
+
+a:focus {
+    outline: 3px solid #5a5a5a;
+    box-shadow: 0 0 0 3px rgba(135,18,113,0.5); 
+    transition: outline 0.2s ease, box-shadow 0.2s ease;
+}
+
+article {
+    border-radius: 0.2em;
+    background-color: #e5e5e5;
+    height: 100%;
+}
+
+.article-header {
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    color: #0F0F0F; 
+    letter-spacing: 0.04em;
+    font-family: "Source Code Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 0.88rem;
+    color: #5D0E50;
+    margin: 0;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: .4em 0;
+    letter-spacing: 0.03em;
+    color: #111111;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+    font-size: .85rem;
+    color: #7c7c7c;
+}
+
+/* =================
+    Images 
+   ================= */
+
+img {
+    width: 100%;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+}
