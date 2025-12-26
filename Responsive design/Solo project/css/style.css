@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    font-family: "Source Sans 3" , sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 390px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black */
+}
+header h1{
+    font-size: 1em;
+    margin-right: auto;
+}
+header img {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1em 0 1em 1em;
+    cursor: pointer;
+}
+
+header button {
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+    font-weight: 500;
+    margin: 1em;
+    cursor: pointer;
+}
+
+/* first section */
+.first-sec{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    background-image: url("images/article-image-hero.jpg");
+    color: white;
+    /* border: 1px solid red; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    padding: 1em;
+}
+
+.first-sec div {
+    margin-bottom: 1rem;        
+}
+.first-sec h2 {
+    /* border: 1px solid red; */
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 3rem;
+    margin-bottom: 0.54rem;
+}
+
+.first-sec p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+/* rest of the sec */
+main div {
+    font-size: 1.2rem;
+}
+
+main section {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.image {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.des {
+    color: #505050;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.bold-txt {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+main > button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline;
+    width: 100%;
+    margin: 2em 0 2em 0;
+}
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-areas:  
+    ". f ."
+    ". s ."
+    ". t ."
+    ". . ."   
+    ;
+}
+
+.sec-1 {
+    grid-area: f;
+}
+
+.sec-2 {
+    grid-area: s;
+}
+
+.sec-3 {
+    grid-area: t;
+}
+
+.hidden {
+    display: none;
+}
+/* footer sec */
+footer {
+    background-color: #202020;
+    /* border: 1px solid red; */
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.bold {
+    font-weight: bold;
+}        
+
+@media (min-width: 600px){
+    .first-sec p {
+        margin-bottom: 2.5em;
+    }
+    .hidden {
+        display: block
+    }
+    .grid{
+        /* border: 1px solid red; */
+        grid-template-columns: 1em repeat(3, 1fr) 1em;
+        column-gap: 1em;
+        grid-template-areas: 
+        ". f s t ."
+        ". fo fi si .";
+    }
+    
+    .sec-4 {
+        grid-area: fo;
+    }
+    
+    .sec-5 {
+        grid-area: fi;
+    }
+    
+    .sec-6 {
+        grid-area: si;
+    }
+    .bold-txt {
+        font-size: clamp(10px, 3vw, 2rem);
+    }
+}
