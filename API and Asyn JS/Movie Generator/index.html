@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="top-sec">
+                <h1>Find your film</h1>
+                <a href="watchlist.html">My Watchlist</a>
+            </div>
+            <div class="searchbar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #bababa;"></i>
+                <input id="input" type="text" placeholder="Search for a movie" required>
+                <button id="button">Search</button>
+            </div>
+        </header>
+        <main>
+            <!-- we have normal and grid class-->
+            <div class="empty-container" id="empty-container">
+                <section class="start-exploring">
+                    <!-- Movie selections will come here -->
+                    <img src="images/icon.png">
+                    <p>Start exploring</p>
+                </section>
+            </div>
+            <section class="hidden movie-section" id="movie-section">
+                <!-- movie section -->
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

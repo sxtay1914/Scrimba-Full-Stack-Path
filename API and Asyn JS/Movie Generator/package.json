@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s03tqlm",
+  "description": "https://scrimba.com/fullstack-path-c0fullstack/~0nv/s06ltt109u/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}

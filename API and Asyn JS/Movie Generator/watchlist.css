@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    padding: 1px;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-color: black;
+    opacity: 0.9;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    /* border: 1px solid white; */
+}
+
+header a {
+    /* border: 1px solid red; */
+    color: white;
+    text-decoration: none;
+}
+
+.top-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.empty-container {
+    color: #DFDDDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+main p {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.movie-section {
+    padding: 2em 3em;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hidden {
+    display: none
+}
+
+.movie-container {
+    padding: 2em 0;
+    border-bottom: 2px solid #E5E7EB;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.movie-container:nth-child(1){
+    padding-top: 0;
+    margin-bottom: auto;
+}
+
+.movie-container img {
+    height: 12.5em;
+    width: 8.25em;
+}
+
+.movie-container h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.movie-container p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2em;
+    
+}
+
+.title-sec {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1em;
+}
+
+.title-sec span {
+    font-size: 0.8rem;
+}
+
+.middle-sec {
+    display: flex;
+    gap: 1em;
+    font-size: 0.8rem;
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    width: 1em;
+    height: 1em;
+}
+
+.watchlist-container {
+    display: flex;
+    align-self: flex-end;
+    gap: 5px;
+}
+
+.movie-container p {
+    font-weight: normal;
+    line-height: 1.5em;
+    color: #6B7280;
+}
+
+.middle-sec button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+.start-exploring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.des {
+    color: #363636;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.plus-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
