@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="watchlist.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="top-sec">
+                <h1>My Watchlist</h1>
+                <a href="index.html">Search for movies</a>
+            </div>
+        </header>
+        <main>
+            <!-- we have normal and grid class-->
+            <div class="empty-container" id="empty-container">
+                <section class="start-exploring">
+                    <p>Your watchlist is looking a little empty...</p>
+                    <div class="plus-sec">
+                        <div class="plus">+</div>
+                        <div class="des">Let's add some movies!<div>
+                    </div>
+                </section>
+            </div>
+            <section class="hidden movie-section" id="movie-section">
+                <!-- movie section -->
+            </section>
+        </main>
+        <script src="watchlist.js" type="module"></script>
+    </body>
+</html>
