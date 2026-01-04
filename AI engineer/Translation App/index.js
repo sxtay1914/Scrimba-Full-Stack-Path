@@ -12,7 +12,7 @@ async function getResponse(text, language){
         {
             method: "POST",
             headers: {
-            "Authorization": "Bearer API_KEY",
+            "Authorization": `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
             "Content-Type": "application/json"
             },
             body: JSON.stringify({
