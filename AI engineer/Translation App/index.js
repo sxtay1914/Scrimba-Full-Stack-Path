@@ -12,7 +12,7 @@ async function getResponse(text, language){
         {
             method: "POST",
             headers: {
-            "Authorization": "Bearer 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",
+            "Authorization": "Bearer API_KEY",
             "Content-Type": "application/json"
             },
             body: JSON.stringify({
