@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    padding: 1px;
+    background-image: url(assets/worldmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+header img {
+    height: 10em;
+    width: 10em;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #32CD32;
+    line-height: 1.5em;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+header p {
+    font-size: 1.4rem;
+    color: white;
+}
+
+main > section {
+    margin: 3em;
+    border: 4px solid #252F42;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90vw;
+}
+
+.blue {
+    color: #035A9D;
+    font-size: 2rem; 
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    box-sizing: border-box;
+}
+
+.grey {
+    padding: 1em;
+    font-family: inherit;
+    width: 80vw;
+    height: 15vh;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #EFF0F4;
+    border: none;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+form {
+    /* border: 1px solid red; */
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    width: 80vw;
+}
+
+form legend {
+    align-self: center;
+    margin-top: 0;
+}
+
+form label {
+    font-size: 2rem;
+    margin-left: 0.3em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid #252F42;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #252F42;
+    border-radius: 50%;
+}
+
+.flag {
+    border: 1px solid black;
+    margin-left: 0.3em;
+}
+
+button {
+    width: 80vw;
+    height: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #035A9D;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.language-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hidden {
+    display: none;
+}

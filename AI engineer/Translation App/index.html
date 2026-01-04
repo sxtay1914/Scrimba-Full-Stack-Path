@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="assets/parrot.png">
+            <div>
+                <h1>PollyGlot</h1>
+                <p>Perfect Translation Every Time</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <section>
+                    <h2 id="title" class="blue">Text to translate 👇</h2>
+                </section>
+                <form id="form">
+                    <textarea class="grey" id="text" placeholder="How are you?">
+                    </textarea>
+                    <legend id="legend" class="blue">Select language 👇</legend>
+                    <div class="language-container" id="language-container">
+                        <div>
+                            <input checked type="radio" id="french" name="language" value="french">
+                            <label for="french">French <img class="flag" src="assets/fr-flag.png"></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="spanish" name="language" value="spanish">
+                            <label for="spanish">Spanish <img class="flag" src="assets/sp-flag.png"></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="japanese" name="language" value="japanese">
+                            <label for="japanese">Japanese <img class="flag" src="assets/jpn-flag.png"></label>
+                        </div>
+                        <button type="submit">Translate</button>
+                    </div>
+                    <div class="grey hidden" id="translated">
+
+                    </div>
+                </form>
+                <button id="restart" class="hidden">Start Over</button>
+            </section>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
