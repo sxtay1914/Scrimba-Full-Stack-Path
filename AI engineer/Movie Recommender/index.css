@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    margin-top: 2em;   
+}
+h1 {
+    font-size: 2.8125rem;
+    font-family: "Carter One", sans-serif;
+    /* border: 1px solid red; */
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+html, body {
+    font-family: "Roboto Slab", serif;
+    background-color: #000C36;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    gap: 2em;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    background-color: #3B4877;
+    border: none;
+    border-radius: 10px;
+    height: 15vh;
+    color: white;
+    font-family: inherit;
+    font-weight: 200;
+    padding: 1em;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+button {
+    margin-top: 0.5em;
+    width: 80vw;
+    border-radius: 10px;
+    font-size: 2.8125rem;
+    padding: 0.3em;
+    font-family: inherit;
+    background-color: #51E08A;
+    font-weight: bold;
+}
+
+.bottom-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: 1em
+}
+
+#restart, #movie-rec {
+    width: 80vw;
+}
+
+#movie-rec{
+    line-height: 1.3rem;
+    
+}

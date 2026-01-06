@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PopChoice</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="./images/icon.png">
+            <h1>PopChoice</h1>
+        </header>
+        <section id="content">
+            <form id="form">
+                <div class="question">
+                    <label for="first">What's your favorite movie and why?</label>
+                    <textarea name="first" id="first" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="second">Are you in the mood for something new or a classic?</label>
+                    <textarea name="second" id="second" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="third">Do you wanna have fun or do you want something serious?</label>
+                    <textarea name="third" id="third" required></textarea>
+                </div>
+                <button type="submit">Let's go</button>
+            </form>
+        </section>
+        <div class="bottom-div">
+            <h2 id="movie-name" class="hidden"></h2>
+            <section id="movie-rec" class="hidden"></section>
+            <button id="restart" class="hidden">Go Again</button>
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html> 
