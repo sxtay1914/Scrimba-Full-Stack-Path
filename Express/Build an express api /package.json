@@ -1,0 +1,16 @@
+{
+  "name": "startup_planet",
+  "version": "1.0.0",
+  "description": "a dataset of the world’s most promising startups",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Tom Chant",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
