@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plaster&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <title>Spiral Sounds</title>
+</head>
+
+<body>
+  <div class="top-banner">
+    <button class="menu-toggle" aria-label="Toggle menu"><img src="images/menu.svg"></button>
+    <nav class="header-menu" aria-label="Main menu">
+      <a href="/login.html" aria-current="page">Login</a>
+      <a href="/signup.html">Sign up</a>
+    </nav>
+  </div>
+
+  <header>
+    <a href="/"><img src="/images/spiral_logo.png" alt="Spiral Sounds Logo"></a>
+    <div class="header-text">
+      <h1>Spiral Sounds</h1>
+      <p class="subhead">The best in vinyl</p>
+    </div>
+  </header>
+
+  <main class="sign-forms">
+    <!-- Sign In Form -->
+    <form class="sign-form" id="signin-form" autocomplete="off">
+      <div class="form-inner">
+        <h2>Welcome back!</h2>
+        <label for="signin-username">Username</label>
+        <input
+        type="text"
+        id="signin-username"
+        name="username"
+        required
+        pattern="^[a-zA-Z0-9_\-]{1,20}$"
+        title="Username must be 1–20 characters and can only include letters, numbers, underscores (_), or hyphens (-)."
+        />
+
+        <label for="signin-password">Password</label>
+        <input type="password" id="signin-password" name="password" required />
+
+        <button type="submit" class="form-btn">Log In</button>
+        <p>No account? <a href="/signup.html" class="sign-link">Sign up here</a>.</p>
+        <p id="error-message" class="error"></p>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>© Spiral Sounds</p>
+  </footer>
+  <script src="js/menu.js" type="module"></script>
+  <script src="js/login.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+/* -----------------------------------
+   CSS Variables
+----------------------------------- */
+:root {
+    /* Colors */
+    --color-bg: #121212;
+    --color-bg-light: #1A1A1A;
+    --color-accent: #ff4c7b;
+    --color-text: #E0E0E0;
+    --color-input-bg: #666;
+    --color-placeholder: whitesmoke;
+    --color-bg-lightest: #333;
+
+    /* Font */
+    --font-base: 'Poppins';
+    --font-heading: 'Plaster', sans-serif;
+
+    /* Spacing */
+    --space-xs: 0.3rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+
+    /* Border Radius */
+    --radius-sm: 3px;
+    --radius-md: 4px;
+    --radius-lg: 8px;
+}
+
+/* -----------------------------------
+   Base Styles
+----------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-base);
+}
+
+/* -----------------------------------
+   Typography
+----------------------------------- */
+h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 6vw, 9rem);
+    font-weight: 700;
+    color: var(--color-accent);
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.subhead {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    margin: 0;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Commented out for recording */
+a:visited {
+    /* color: var(--color-accent); */
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+
+/* -----------------------------------
+   Layout / Structure
+----------------------------------- */
+header,
+footer {
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-light);
+}
+
+header {
+    justify-content: space-between;
+}
+
+header img {
+    width: clamp(80px, 15vw, 200px);
+}
+
+footer {
+    justify-content: center;
+    margin-top: var(--space-lg);
+}
+
+.products {
+    padding: 0 var(--space-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 250px));
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2em 1em;
+}
+
+.genre-select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+    gap: var(--space-md);
+
+}
+
+/* -----------------------------------
+   Header Components
+----------------------------------- */
+.top-banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    padding: var(--space-md) var(--space-md);
+    background-color: var(--color-bg-lightest);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.top-banner-greeting {
+    font-size: .8em;
+    margin: 0;
+    margin-right: auto;
+}
+
+.top-banner input {
+    margin-left: var(--space-md);
+    padding: var(--space-sm);
+    border: none;
+    border-radius: var(--radius-md);
+    background-color: var(--color-input-bg);
+    color: white;
+}
+
+.top-banner input::placeholder {
+    color: var(--color-placeholder);
+    transition: color 0.2s ease;
+}
+
+.top-banner input:focus::placeholder {
+  color: transparent;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* -----------------------------------
+   Product Card Components
+----------------------------------- */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-bg-lightest);
+    padding-bottom: var(--space-md);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.main-btn {
+    padding: 0.8em 1.5em;
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.genre-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color-accent);
+    color: black; 
+    border-bottom-right-radius: var(--radius-md);
+    border-top-left-radius: var(--radius-md);
+}
+
+/* -----------------------------------
+   Form Elements
+----------------------------------- */
+section label {
+    padding: var(--space-xs);
+}
+
+select {
+    padding: var(--space-xs);
+    background-color: var(--color-bg-lightest);
+    color: white;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+/* -----------------------------------
+   Accessibility
+----------------------------------- */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* -----------------------------------
+   Media Queries
+----------------------------------- */
+
+@media (max-width: 768px) {
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-bg-lightest);
+        padding: var(--space-md);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1;
+        border-left: 2px solid var(--color-accent);
+        border-bottom: 2px solid var(--color-accent);
+        height: 100%; 
+        min-height: 100vh;
+        gap: 1em;
+    }
+
+    .header-menu.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: unset;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: white;
+        align-self: center;
+    }
+
+    .menu-toggle img {
+      display: block; 
+    }
+
+    .top-banner input {
+        margin-left: 0;
+        padding: var(--space-sm);
+    }
+
+    .products {
+        padding: 0 var(--space-md);
+    }
+
+    header {
+        padding: var(--space-md);
+    }
+}
+
+/* -----------------------------------
+   Sign in/up forms
+----------------------------------- */
+
+.sign-forms {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.form-inner input {
+    padding: .7em;
+}
+
+.form-inner label {
+    margin-bottom: -5px;
+}
+
+.sign-link {
+    color: var(--color-accent);
+    border: none;
+    cursor: pointer;
+}
+
+.form-btn {
+    margin-top: .5em;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+}
+
+.form-btn:hover, .main-btn:hover {
+    background-color: dodgerblue;
+}
+
+.form-btn:active, .main-btn:active {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* -----------------------------------
+   Cart
+----------------------------------- */
+
+.cart-main {
+    margin: 0 auto;
+    padding: 1.5em;
+    max-width: 600px;
+}
+
+.cart-main ul {
+    list-style: none;
+    width: 100%;
+    padding: .5em 0;
+}
+
+.cart-main ul li {
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.cart-main ul li div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-main ul li span {
+    font-size: 14px;
+}
+
+.cart-main ul li button {
+    background-color: transparent;
+    margin-left: auto;
+    border: 0;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.cart-banner-link{
+    display: flex;
+    align-items: center;
+}
+
+.cart-banner-link a{
+    color: var(--color-accent);
+}
+
+.cart-banner-link a:hover{
+    text-decoration: none;
+}
+
+.cart-banner-link img{
+    max-width: 1em;
+    margin-right: .3em;
+}
